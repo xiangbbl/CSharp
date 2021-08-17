@@ -19,8 +19,14 @@ namespace CSharp
             for (int j = 0; j < 4; j++) {
                 Console.WriteLine("Hello {0} yes{0}", arr[j], con);
             }
-            Console.WriteLine($"Hello world{i}.....{con}");
+            Cars c = new Cars("BMW", 2021);
+            //c.Model = "Mazda";
+            //c.Year = 2020;
+            Console.WriteLine($"Hello world {c.Model} " +
+                $"and {c.Year}");
             Console.ReadKey();
+            
+
         }
     }
 }
